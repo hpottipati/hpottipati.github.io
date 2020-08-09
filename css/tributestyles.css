@@ -1,17 +1,17 @@
-
+/* STYLES FOR THE HEADER */
 main {
     font-family: 'Source Sans Pro', sans-serif;
     background: #eef1ef;
 }
-header {
+/* header {
     background: #273469;
     background-repeat: none;
     background-size: auto;
     padding: 5px;
     margin: -9px;
     text-transform: uppercase;
-}
-
+} */
+/* STYLES FOR THE TRIBUTE SITE */
 #title {
     margin: 10px;
     font-size: 2.5vw;
@@ -64,7 +64,7 @@ a:hover{
 ul{
     list-style-type: none;
 }
-.navigation{
+/* .navigation{
     display: inline-block;
     font-family: Roboto;
     margin: 0px 20px 0 0;
@@ -81,4 +81,4 @@ ul{
 
 .navigation a :visited{
     text-decoration: none;
-}
+} */

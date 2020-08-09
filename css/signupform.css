@@ -2,7 +2,7 @@
 html {
     font-family: helvetica;
 }
-ul{
+/* ul{
     list-style-type: none;
 }
 .navigation{
@@ -31,7 +31,7 @@ header {
     padding: 5px;
     margin: -9px;
     text-transform: uppercase;
-}
+} */
 /* Start of website's CSS */
 :root {
     --prussian-blue: #13293d;

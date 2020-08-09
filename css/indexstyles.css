@@ -1,0 +1,68 @@
+body {
+    background: whitesmoke;
+    color: black;
+    font-family: sans-serif;
+    margin: 0;
+    padding: auto;
+}
+
+header {
+    background: black;
+    background-repeat: none;
+    background-size: auto;
+    padding: 0.1rem;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.projectlist {
+    list-style-type: none;
+}
+
+.navigation {
+    display: inline-block;
+    font-family: Roboto;
+    margin: 0px 20px 0 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.navigation:hover>i {
+    opacity: 0.7;
+
+}
+
+.navigation a {
+    text-decoration: none;
+    color: whitesmoke;
+    ;
+}
+
+.navigation a :visited {
+    text-decoration: none;
+}
+
+.aboutme {
+    background-color: #FAFAFF;
+    color: #30343F;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+
+footer a img {
+    width: 6vw;
+    padding: 1rem;
+    margin: 0.9rem auto;
+}
+
+#gmaillogo{
+    width: 7vw;
+}
+
+#githublogo{
+    margin: 1.4 rem;
+}
