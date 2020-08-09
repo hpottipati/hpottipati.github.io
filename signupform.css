@@ -1,8 +1,38 @@
-
+/*  */
 html {
     font-family: helvetica;
 }
+ul{
+    list-style-type: none;
+}
+.navigation{
+    display: inline-block;
+    font-family: Roboto;
+    margin: 0px 20px 0 0;
+    font-size: 30px;
+    text-align: center;
+}
+.navigation:hover {
+    opacity: 0.7;
+}
+.navigation a{
+    text-decoration: none;
+    color: #E4D9FF;;
+}
 
+.navigation a :visited{
+    text-decoration: none;
+}
+
+header {
+    background: #273469;
+    background-repeat: none;
+    background-size: auto;
+    padding: 5px;
+    margin: -9px;
+    text-transform: uppercase;
+}
+/* Start of website's CSS */
 :root {
     --prussian-blue: #13293d;
     --sapphire-blue: #006494;
@@ -16,7 +46,7 @@ body {
     display: block;
 }
 
-header {
+.title {
     color: var(--azure-x-11-web-color);
 }
 
@@ -25,14 +55,10 @@ form {
 }
 
 .details {
-    margin: 1rem auto 0.5em 0px;
+    margin: 1rem auto 0.5em 0rem;
 }
-
-div h4 {
-    margin: 0.5rem auto 0.25rem 0rem;
-}
-
-div input {
+.details input{
+    margin-left: 0.25rem;
     border: none;
     border-radius: 3%;
     /* -----------------------------------
@@ -41,6 +67,10 @@ div input {
     color: var(--azure-x-11-web-color);
     font-size: 100%;
 }
+div h4 {
+    margin: 0.5rem auto 0.25rem 0rem;
+}
+
 
 .radio {
     margin: 0.25rem auto 0.25rem 0rem;
