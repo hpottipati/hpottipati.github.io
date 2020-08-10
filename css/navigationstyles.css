@@ -5,19 +5,9 @@ header {
     background-repeat: none;
     background-size: auto;
     padding: 0.1rem;
-    margin: -1.2vh -1rem;
-    
-    
+    margin: -1vh -1vw;   
 }
-.projects{
-    display: flex;
-    background: black;
-    background-repeat: none;
-    background-size: auto;
-    padding: 0.1rem;
-    margin: -10px;
-    justify-content: center;
-}
+
 
 .projectlist {
     list-style-type: none;
