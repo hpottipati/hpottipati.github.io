@@ -26,13 +26,16 @@ main {
     max-width: 100%;
     width: 50%;
     height: auto;
-    box-shadow: 2px 2px 15px #888888;
+    box-shadow: 2px 2px 12px #888888;
     display: block;
 }
 
 #img-caption {
     margin: 20px auto -20px auto;   
     text-align: center;
+    position: relative;
+    bottom: 0.75rem;
+    font-size: 1.2rem;
 }
 
 a {
@@ -47,12 +50,17 @@ a:hover{
     color:#542344;
 }
 
-#tribute-info {
-    font-size: 1em;
+.tribute-info {
+    font-size: 1.3em;
     background-color: #d8dad9;
     color: #1c2321;
     padding: 1.8rem;
 }
+
+.tribute-info > ul > li {
+    margin: 1rem;
+}
+
 ul{
     list-style-type: none;
 }

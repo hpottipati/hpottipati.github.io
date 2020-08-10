@@ -1,0 +1,81 @@
+
+html {
+    background-color: gray;
+}
+
+header {
+    background-color: lightslategray;
+}
+
+/* NAVIGATION BAR AT THE TOP OF THE PAGE */
+#nav-bar ul li {
+    display: inline-flex;
+    margin: 1rem;
+}
+
+#nav-bar ul {
+    list-style-type: none;
+    text-align: start;
+}
+
+#header-img {
+    text-align: left;
+    height: 10rem;
+}
+
+.nav-link {
+    font-family: 'Lato';
+    text-decoration: none;
+    font-size: 2rem;
+    position: relative;
+    top: -62px;
+
+}
+
+.nav-link:hover {
+    opacity: 0.5;
+}
+
+.nav-link:visited {
+    text-decoration: none;
+}
+
+/* PRODUCTS AND THEIR DESCRIPTIONS */
+
+body > h2{
+
+}
+.container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: initial;
+    margin: 5rem auto auto 0.5rem;
+}
+
+.container>.model {
+    margin: -4rem auto 2rem auto;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* FOOTER */
+footer {
+    background-color: rgb(117, 17, 17);
+    color: white;
+    font-family: 'Lato';
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    display: block;
+    text-align: center;
+}
+
+@media only screen and (max-width: 622px) {
+    .nav-link {
+    font-family: 'Lato';
+    text-decoration: none;
+    font-size: 2rem;
+    position: relative;
+    top: 0px;
+}
+}
