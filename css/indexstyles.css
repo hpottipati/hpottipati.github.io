@@ -6,24 +6,24 @@ body {
     padding: auto;
 }
 
-#title{
+#title {
     font-family: Lato, 'Open Sans';
     font-size: 3rem;
     /* background-size: cover; */
-    
+
 }
 
-.projects{
+.projects {
     display: flex;
     background: black;
     /* background-size: cover; */
     padding: 0.1rem;
-    margin: -1vh -1vw;   
+    margin: -1vh -1vw;
     justify-content: center;
 }
 
 .aboutme {
-   background-size: auto ;
+    background-size: auto;
     color: #30343F;
     margin: 0vh auto;
     font-family: Lato, 'Open sans', Roboto, Helvetica;
@@ -33,32 +33,103 @@ body {
 footer {
     display: flex;
     background-color: black;
-    background-size: auto ;
+    background-size: auto;
     justify-content: center;
-    margin: 5vh -1vw;   
+    margin: 5vh -1vw 0vh -1vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 
-#gmaillogo{
+#gmaillogo {
     width: 7.5vw;
     padding: 1vh;
-    margin: 0.6vh auto;
-    
+    margin: 0.6vh 1.5vw 1.5vh 1.5vw;
+
 }
 
-#gmaillogo:hover{
-   
+#gmaillogo:hover {
+
     transform: translateY(5px);
     transition-duration: 400ms;
 }
 
-#githublogo{
+#githublogo {
     width: 6vw;
     padding: 1vh;
-    margin: 1.5vh;
+    margin: 1.8vh 1.5vw 1.5vh 1.5vw;
 }
 
-#githublogo:hover{
+#githublogo:hover {
     transform: translateY(5px);
     transition-duration: 400ms;
+}
+
+@media screen and (max-width:1595px) {
+    #gmaillogo {
+        width: 9vw;
+    }
+
+    #githublogo {
+        width: 7.5vw;
+
+    }
+
+    .aboutme {
+        font-size: 1.2rem;
+    }
+
+    #title {
+        font-size: 2.7rem;
+    }
+}
+
+@media screen and (max-width:1398px) {
+    #gmaillogo {
+        margin: .8vh 1.5vw 1.5vh 1.5vw;
+
+    }
+
+
+}
+
+@media screen and (max-width:782px) {
+    #gmaillogo {
+        width: 10vw;
+        margin: 1vh 1.5vw 1.5vh 1.5vw;
+    }
+
+    #githublogo {
+        width: 8.5vw;
+
+    }
+
+    .aboutme {
+        font-size: 1rem;
+    }
+
+    #title {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width:627px) {
+    #gmaillogo {
+        width: 11vw;
+        margin: 1.2vh 1.5vw 1.5vh 1.5vw;
+    }
+
+    #githublogo {
+        width: 9.5vw;
+
+    }
+
+    #title {
+        font-size: 2.0rem;
+    }
+
+
 }
