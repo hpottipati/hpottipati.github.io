@@ -1,10 +1,22 @@
+/* Imported Open Sans and Gentium Basic */
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Gentium+Basic&family=Lato:wght@300&family=Montserrat:wght@300&family=Open+Sans&display=swap');
 header {
     background: black;
     background-repeat: none;
     background-size: auto;
     padding: 0.1rem;
-    margin: auto;
-    text-transform: uppercase;
+    margin: -10px;
+    
+    
+}
+.projects{
+    display: flex;
+    background: black;
+    background-repeat: none;
+    background-size: auto;
+    padding: 0.1rem;
+    margin: -10px;
+    justify-content: center;
 }
 
 .projectlist {
@@ -13,21 +25,21 @@ header {
 
 .navigation {
     display: inline-block;
-    font-family: Roboto;
+    font-family: 'Open Sans';
     margin: 0px 20px 0 0;
-    font-size: 30px;
+    font-size: 1.8rem;
     text-align: center;
 }
 
-.navigation:hover>i {
+.navigation:hover {
     opacity: 0.7;
-
+    transform: translateY(2px);
 }
 
 .navigation a {
     text-decoration: none;
     color: whitesmoke;
-    ;
+    
 }
 
 .navigation a :visited {
