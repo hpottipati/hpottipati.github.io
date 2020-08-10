@@ -17,11 +17,11 @@ main {
     background: #eef1ef;
     margin: auto;
     padding: 10px;
-    width: 50%; 
+    width: 50%;
 }
 
 #image {
-   
+
     margin: auto auto;
     max-width: 100%;
     width: 20vw;
@@ -31,7 +31,7 @@ main {
 }
 
 #img-caption {
-    margin: 20px auto -20px auto;   
+    margin: 20px auto -20px auto;
     text-align: center;
     position: relative;
     bottom: 0.75rem;
@@ -46,8 +46,9 @@ a {
 a:visited {
     text-decoration: none;
 }
-a:hover{
-    color:#542344;
+
+a:hover {
+    color: #542344;
 }
 
 .tribute-info {
@@ -58,26 +59,32 @@ a:hover{
     margin: 0.5rem;
 }
 
-.tribute-info > ul > li {
+.tribute-info>ul>li {
     margin: 1rem;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
-@media screen and (max-width: 502px){
-    .tribute-info{
+
+@media screen and (max-width: 502px) {
+    .tribute-info {
         padding: 1.5rem;
         font-size: 1.2rem;
     }
-    .tribute-info > p{
-        
+
+    .tribute-info>p {
+
         font-size: 1rem;
     }
-    
+
 }
-@media screen and (max-width:1231px){
-    #image{
-        width: 21vw;
-}
+
+@media screen and (max-width:813px) {
+    #image {
+        width: 25vw;
+    }
+    .tribute-info{
+        padding: 1rem;
+    }
 }
