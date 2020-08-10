@@ -24,7 +24,7 @@ main {
    
     margin: auto auto;
     max-width: 100%;
-    width: 50%;
+    width: 20vw;
     height: auto;
     box-shadow: 2px 2px 12px #888888;
     display: block;
@@ -55,6 +55,7 @@ a:hover{
     background-color: #d8dad9;
     color: #1c2321;
     padding: 1.8rem;
+    margin: 0.5rem;
 }
 
 .tribute-info > ul > li {
@@ -63,4 +64,20 @@ a:hover{
 
 ul{
     list-style-type: none;
+}
+@media screen and (max-width: 502px){
+    .tribute-info{
+        padding: 1.5rem;
+        font-size: 1.2rem;
+    }
+    .tribute-info > p{
+        
+        font-size: 1rem;
+    }
+    
+}
+@media screen and (max-width:1231px){
+    #image{
+        width: 21vw;
+}
 }
