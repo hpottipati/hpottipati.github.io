@@ -1,0 +1,102 @@
+:root{
+    --alice-blue: rgb(228, 236, 241);
+    --pale-silver: #d6c9c9ff;
+    --beau-blue: #c7d3ddff;
+    --aero: #77b6eaff;
+    --onyx: #37393aff;
+    }
+    html{
+        background-color: whitesmoke;
+        
+    }
+    #navbar{
+      height: 100%;
+      width: 14vw;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      background-color: var(--alice-blue);
+      overflow:hidden;
+      padding-top: 16px;
+    }
+    #navbar > .sidebartitle{
+        text-align: center;
+        font-family: sans-serif;
+        color: var(--onyx);
+        font-size: 1.5rem;
+        
+    }
+    #navbar > ul{
+        list-style-type: none;
+        overflow: hidden;
+        padding: 5%;
+    
+    }
+    #navbar > ul > li{
+        margin: 1rem auto;
+        text-decoration: none;
+    }
+    #navbar > ul > li > a{
+        font-family: sans-serif;
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: var(--onyx);
+        word-wrap: normal;
+    }
+    #navbar > ul > li > a:visited{
+        font-family: sans-serif;
+        text-decoration: none;
+        color: var(--onyx);
+        
+    }
+    .main-section{
+        margin-left: 14vw;
+        margin-top: 1.5vh;
+        margin-right: auto;
+        font-family: Helvetica;
+        background-color: #d5dbe0;
+        padding: 2rem;
+        padding-bottom: 1rem;
+        background-size: auto;
+       text-align: left;
+       word-wrap: break-word;
+       overflow: auto;
+    }
+    .main-section > .sectiontitle{
+       font-weight: bold;
+    }
+    .main-section > pre{
+        margin-left: -7vw;
+    }
+    #sidenote{
+        margin-left: 14vw;
+        margin-top: 1vh;
+        font-family: Helvetica;
+       
+    }
+    
+    @media screen and (max-width:910px){
+        #navbar > ul > li > a{
+            font-size: 1rem;
+        }
+        .main-section > pre{
+            margin-left: -7vw;
+        }
+        
+    }
+    
+    @media screen and (max-width:635px){
+        #navbar > ul > li > a{
+            font-size: 0.85rem;
+        }
+    }
+    @media screen and (max-width:px){
+        #navbar > ul > li > a{
+            font-size: 0.85rem;
+        }
+    }
+    
+    
+    
+    
+    

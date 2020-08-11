@@ -8,17 +8,22 @@ header {
     margin: -1vh -1vw;   
 }
 
+header nav {
+    display: flex;
+    justify-content: center;
+    
+}
 
 .projectlist {
     list-style-type: none;
 }
 
 .navigation {
-    display: inline-block;
     font-family: 'Open Sans';
     margin: 0px 20px 0 0;
     font-size: 1.8rem;
-    text-align: center;
+    display: inline-block;
+
 }
 
 .navigation:hover {
