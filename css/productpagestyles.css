@@ -1,81 +1,193 @@
+  :root {
+      --dark-sienna: #220901ff;
+      --blood-red: #621708ff;
+      --dark-red: #941b0cff;
+      --rust: #bc3908ff;
+      --bright-yellow-crayola: #f6aa1cff;
 
-html {
-    background-color: gray;
-}
+  }
 
-header {
-    background-color: lightslategray;
-}
+  html {
+      background-color: var(--rust);
+  }
 
-/* NAVIGATION BAR AT THE TOP OF THE PAGE */
-#nav-bar ul li {
-    display: inline-flex;
-    margin: 1rem;
-}
 
-#nav-bar ul {
-    list-style-type: none;
-    text-align: start;
-}
 
-#header-img {
-    text-align: left;
-    height: 10rem;
-}
+  /* NAVIGATION BAR AT THE TOP OF THE PAGE */
+  #nav-bar {
+      margin: auto auto 5vh auto;
+  }
 
-.nav-link {
-    font-family: 'Lato';
-    text-decoration: none;
-    font-size: 2rem;
-    position: relative;
-    top: -62px;
+  #links {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+  }
 
-}
+  #nav-bar>ul>li>a {
+      text-decoration: none;
+      font-family: 'Open Sans';
+      margin: 2vh;
+      color: var(--dark-sienna);
+      font-size: 2.7rem;
+  }
 
-.nav-link:hover {
-    opacity: 0.5;
-}
+  #nav-bar>ul>li>a:visited {
+      text-decoration: none;
+      color: var(--dark-sienna);
+  }
 
-.nav-link:visited {
-    text-decoration: none;
-}
+  /* PRODUCTS AND THEIR DESCRIPTIONS */
 
-/* PRODUCTS AND THEIR DESCRIPTIONS */
+  body>h2 {
+      font-family: 'Open Sans';
+      font-size: 2.5rem;
+  }
 
-body > h2{
+  #products {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-direction: initial;
+      margin: 2rem auto auto 0.5rem;
+  }
 
-}
-.container {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: initial;
-    margin: 5rem auto auto 0.5rem;
-}
+  #products>.model {
+      margin: 0rem 2rem 2rem auto;
+      text-align: left;
+      font-family: sans-serif;
+      color: var(--dark-sienna);
+  }
 
-.container>.model {
-    margin: -4rem auto 2rem auto;
-    text-align: center;
-    font-family: sans-serif;
-}
+  #products>.model>h3 {
+      font-size: 2rem;
+  }
 
-/* FOOTER */
-footer {
-    background-color: rgb(117, 17, 17);
-    color: white;
-    font-family: 'Lato';
-    font-size: 2rem;
-    padding: 1rem;
-    margin: 1rem;
-    display: block;
-    text-align: center;
-}
+  #products>.model>p {
+      font-size: 1.5rem;
+  }
 
-@media only screen and (max-width: 622px) {
-    .nav-link {
-    font-family: 'Lato';
-    text-decoration: none;
-    font-size: 2rem;
-    position: relative;
-    top: 0px;
-}
-}
+  /*INPUTS */
+  #form {
+      margin: 1vh 1vh;
+  }
+
+  #form>input[type=email] {
+      width: 10vw;
+      padding: 1vw 1vh;
+      margin: 1vw;
+
+  }
+
+  #form>input[type=submit] {
+      background-color: white;
+
+      width: 2w;
+      padding: 2vh;
+      margin: 0.5vh;
+
+  }
+
+  /* VIDEO AND EMAIL */
+  .media {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: 'Open Sans';
+      margin-bottom: 10vh;
+  }
+
+  #media>h2 {
+      display: flex;
+      align-self: start;
+      font-family: 'Open Sans';
+  }
+
+  /* FOOTER */
+  footer {
+      background-color: rgb(117, 17, 17);
+      color: white;
+      font-family: 'Lato';
+      font-size: 2rem;
+      padding: 1rem;
+      margin-top: 1rem;
+      display: block;
+      position: relative;
+      text-align: center;
+      width: 100%;
+      bottom: 0vh;
+      left: 0px;
+      overflow: hidden;
+  }
+
+
+
+  @media only screen and (max-width: 800px) {
+      #nav-bar>ul>li>a {
+          font-size: 2.4rem;
+      }
+
+      #products>.model>h3 {
+          font-size: 1.6rem;
+      }
+
+      #products>.model>p {
+          font-size: 1rem;
+      }
+
+      footer {
+          font-size: 1.5rem;
+          position: static;
+      }
+
+      body>h2 {
+          font-family: 'Open Sans';
+          font-size: 2.3rem;
+      }
+  }
+
+  @media only screen and (max-width: 654px) {
+      #nav-bar>ul>li>a {
+          font-size: 1.8rem;
+      }
+
+      #products>.model>h3 {
+          font-size: 1.1rem;
+      }
+
+      #products>.model>p {
+          font-size: 0.9rem;
+      }
+
+      footer {
+          font-size: 1.2rem;
+
+      }
+
+
+  }
+
+  @media only screen and (max-width: 561px) {
+      #nav-bar>ul>li>a {
+          font-size: 1.4rem;
+      }
+
+      #products>.model>h3 {
+          font-size: 1.2rem;
+      }
+
+      #products>.model>p {
+          font-size: 0.9rem;
+      }
+
+      footer {
+          font-size: 1.3rem;
+
+      }
+      body>h2 {
+        font-size: 2.2rem;
+    }
+
+  }

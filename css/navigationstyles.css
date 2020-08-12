@@ -17,10 +17,10 @@ header nav {
 .projectlist {
     list-style-type: none;
 }
-
+    
 .navigation {
     font-family: 'Open Sans';
-    margin: 0px 20px 0 0;
+    margin: 1vh 1vw;
     font-size: 1.8rem;
     display: inline-block;
 
@@ -40,4 +40,19 @@ header nav {
 
 .navigation a :visited {
     text-decoration: none;
+}
+
+@media screen and (min-width:37px){
+    .navigation {
+        font-size: 1.1rem;
+    
+    }
+}
+
+@media screen and (min-width:360px){
+    .navigation {
+        margin: -1vh 1vw;
+        font-size: 1.1rem;
+    
+    }
 }
