@@ -44,7 +44,7 @@ body {
 .projectstitle>p {
     font-family: Lato, 'Open Sans';
     font-size: 1.3rem;
-    margin: auto;
+    margin: auto auto 2rem auto;
     text-align: left;
 
 }
