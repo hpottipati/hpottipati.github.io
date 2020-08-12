@@ -67,6 +67,7 @@
     }
     .main-section > pre{
         margin-left: -7vw;
+        overflow: scroll;
     }
     #tutorial{
         text-decoration: none;
@@ -87,11 +88,14 @@
     
     @media screen and (max-width:910px){
         #navbar > ul > li > a{
-            font-size: 1rem;
+            font-size: 1.1rem;
+          
         }
         .main-section > pre{
             margin-left: -7vw;
+            
         }
+        
         
     }
     
@@ -104,6 +108,17 @@
         header nav ul li a{
             font-size: 0.68rem;
         }
+    }
+    @media screen and (max-width:375px){
+        .navigation a {
+            margin: -1vh 1vw;
+            font-size: 0.8rem;
+        
+        }
+        .main-section > pre{
+            margin-left: -35vw;
+        }
+        
     }
 
     

@@ -2,6 +2,7 @@
 main {
     font-family: 'Source Sans Pro', sans-serif;
     background: #eef1ef;
+    background-size: cover;
 }
 
 #title {
@@ -67,6 +68,22 @@ ul {
     list-style-type: none;
 }
 
+.photos {
+    display: flex;
+    background-color: #eef1ef;
+    justify-items: center;
+    flex-direction: column;
+}
+
+#rupeepic > img {
+    width: 80%;
+}
+
+#gandhistatue > img{
+    width: 80%;
+}
+
+
 @media screen and (max-width: 502px) {
     .tribute-info {
         padding: 1.5rem;
@@ -84,7 +101,8 @@ ul {
     #image {
         width: 25vw;
     }
-    .tribute-info{
+
+    .tribute-info {
         padding: 1rem;
     }
 }

@@ -41,18 +41,34 @@ header nav {
 .navigation a :visited {
     text-decoration: none;
 }
-
-@media screen and (min-width:37px){
-    .navigation {
-        font-size: 1.1rem;
+@media screen and (max-width:1150px){
+       .navigation a{
+           font-size: 1.7rem;
+       } 
+}
+@media screen and (max-width:845px){
+    .navigation a {
+        font-size: 1.2rem;
     
     }
 }
 
-@media screen and (min-width:360px){
-    .navigation {
+@media screen and (max-width:636px){
+    .navigation a {
         margin: -1vh 1vw;
-        font-size: 1.1rem;
+        font-size: 0.95rem;
     
     }
+
+}
+@media screen and (max-width:375px){
+    .navigation a {
+        margin: -1vh 2vw;
+        font-size: 0.9rem;
+    
+    }
+    #navbar nav ul li{
+        margin-left: 3vw;
+    }   
+     
 }
