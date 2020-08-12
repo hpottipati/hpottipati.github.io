@@ -25,33 +25,35 @@
     </header>
     <div class="title">
         <h1>Coding Camp Sign up</h1>
-        <h2>Grades 6-8</h2>
-        <p></p>
     </div>
+    <div class="title">
+        <h2>Grades 6-8</h2>
 
+    </div>
     <form id="survey-form" action="">
+        <div class="textinput">
+            <div class="details">
+                <label for="name" id="name-label">First Name:</label>
+                <input type="text" id="firstname" required placeholder="Enter your first name">
+            </div>
 
-        <div class="details">
-            <label for="name" id="name-label">First Name:</label>
-            <input type="text" id="firstname" required placeholder="Enter your first name">
+            <div class="details">
+                <label for="name" id="name-label">Last Name:</label>
+                <input type="text" id="lastname" required placeholder="Enter your last name">
+            </div>
+
+            <div class="details">
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="details">
+                <label for="number" id="number-label">Grade:</label>
+                <input type="number" id="number" max="8" min="6" required placeholder="Grade">
+            </div>
+
         </div>
 
-        <div class="details">
-            <label for="name" id="name-label">Last Name:</label>
-            <input type="text" id="lastname" required placeholder="Enter your last name">
-        </div>
-
-        <div class="details">
-            <label for="email" id="email-label">Email:</label>
-            <input type="email" id="email" required placeholder="Enter your email">
-        </div>
-
-        <div class="details">
-            <label for="number" id="number-label">Grade:</label>
-            <input type="number" id="number" max="8" min="6" required placeholder="Grade">
-        </div>
-        <!-- paragraph spacer -->
-        <p></p>
         <div class="radio">
             <h4>Date of Session</h4>
             <label for="Saturday">Saturday</label>
@@ -61,7 +63,8 @@
         </div>
 
         <div class="dropdown">
-            <label for="dropdown">Are you considering signing up for our school year course?</label>
+            <h4>Are you considering signing up for our school year course?</h4>
+            <label for="dropdown"></label>
             <select name="dropdown" id="dropdown">
                 <option disabled selected value>Select a choice</option>
                 <option value="Yes">Yes</option>
@@ -71,13 +74,14 @@
 
 
         <div class="checkboxes">
+            <h4>Which languages do you want to learn?</h4>
             <label for="Java">Java</label>
             <input type="checkbox" name="Java" id="Java" value="Java">
             <label for="HTML">HTML</label>
             <input type="checkbox" name="HTML" id="HTML" value="HTML">
         </div>
 
-        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Additional Comments"></textarea>
+        <textarea name="comments" id="comments" cols="30" rows="5" placeholder="Additional Comments"></textarea>
         <div>
             <button id="submit" type="submit">Submit</button>
         </div>

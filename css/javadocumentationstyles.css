@@ -68,6 +68,16 @@
     .main-section > pre{
         margin-left: -7vw;
     }
+    #tutorial{
+        text-decoration: none;
+        color: var(--aero);
+        font-weight: bolder;
+    }
+    #tutorial:visited{
+        text-decoration: none;
+        color: var(--aero);
+        font-weight: bolder;
+    }
     #sidenote{
         margin-left: 14vw;
         margin-top: 1vh;
@@ -90,11 +100,12 @@
             font-size: 0.85rem;
         }
     }
-    @media screen and (max-width:px){
-        #navbar > ul > li > a{
-            font-size: 0.85rem;
+    @media screen and (max-width:414px){
+        header nav ul li a{
+            font-size: 0.68rem;
         }
     }
+
     
     
     
