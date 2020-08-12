@@ -24,8 +24,6 @@ body {
 .title {
     font-family: Lato, 'Open Sans';
     font-size: 3rem;
-    /* background-size: cover; */
-
 }
 
 .aboutme {
@@ -62,7 +60,6 @@ body {
 .projects {
     display: flex;
     background: black;
-    /* background-size: cover; */
     padding: 0.1rem;
     margin: 1vh 1vw;
     justify-content: center;
@@ -74,7 +71,7 @@ footer {
     background-size: auto;
     justify-content: center;
     margin: 5vh -1vw 0vh -1vh;
-    position: absolute;
+    position: relative;
     left: 0px;
     bottom: 0px;
     width: 100%;
