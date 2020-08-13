@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<main id="main-doc">
+
+    <head>
+        <link rel="stylesheet" href="css/javastyles.css">
+        <link rel="stylesheet" href="css/navigationstyles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <header>
+        <div class="projects">
+        <nav>
+            <ul>
+                <li class="navigation"><a href="index.html">Home</a></li>
+                <li class="navigation"><a href="tribute.html">Tribute Page</a></li>
+                <li class="navigation"><a href="signupform.html">Sign up Form</a></li>
+                <li class="navigation"><a href="productpage.html">Product Page</a></li>
+                <li class="navigation"><a href="javatutorial.html">Java Guide</a></li>
+                <li class="navigation"><a href="album.html">Photo Album</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <main id="main-doc">
+
+        <body>
+            <nav id="navbar">
+                <div class="sidebartitle">Java</div>
+                <ul>
+                    <li>
+                        <a href="#Introduction_to_Java" class="nav-link">Introduction to java</a>
+
+                    </li>
+                    <li>
+                        <a href="#Variables" class="nav-link">Variables</a>
+                    </li>
+                    <li>
+                        <a href="#Blocks_of_code" class="nav-link">Blocks of code</a>
+                    </li>
+                    <li>
+                        <a href="#Control_Statements" class="nav-link">Control Statements</a>
+                    </li>
+                    <li>
+                        <a href="#Loops" class="nav-link">Loops</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section id="Introduction_to_Java" class="main-section">
+                <div class="sectiontitle">Introduction to Java</div>
+                <ul>
+                    <li>
+                        Java is an object oriented programming language based off of C and C++. Released in 1995, it has
+                        grown to huge popularity, and is now the most used programming language in the world
+                    </li>
+
+                    <li>
+                        Just like other OOP languages, Java also has implementations of
+                        Encapsulation, Inheritance, and Polymorphism
+                    </li>
+                    <li>
+                        It is good practice to have the name of the class be the same as the name of the file that you put it in
+                    </li>
+                    <li>All the code on this page is able to be run in any IDE or any java-enabled command prompt.
+                        Please try these by yourself to really understand them</li>
+                    <li><a href="https://www.maketecheasier.com/run-java-program-from-command-prompt/" id="tutorial" target="_blank">Click here</a> to
+                        read an article on how to setup java and the command prompt to run java programs</li>
+
+                </ul>
+                <p>One of the first things you create when you learn a language is the "Hello World" Program</p>
+                <pre> <code>
+                class HelloWorld{
+                    public static void main(String args[]){
+                        System.out.println("Hello World");
+                    }
+                }
+            </code>
+        </pre>
+                <p>Result: <br> Hello World <br>
+            </section>
+            <br>
+            <ul id="sidenote">
+                <li>Side note: Using // is a way to make comments in java. I will be using them to explain lines of code
+                    in the following sections
+                </li>
+                <li> You also put a semi colon at the end of each command, like we did for <code>System.out.println("Hello World");</code></li>
+            </ul>
+            <section id="Variables" class="main-section">
+                <div class="sectiontitle">Variables</div>
+                <ul>
+                    <li>Variables are places where data is stored</li>
+                    <li>There are many types of Variables, like int, double, boolean, and String. All of these store a
+                        different
+                        type of data. Let's take a look at a program that shows variables in action</li>
+                </ul>
+
+                <pre>  <code>
+                class intVariables{      
+                    public static void main(String args[]){
+                        int num; //Create an integer variable named num
+                        num = 10; //Assign num to a value of 10                
+                        System.out.println("Num is: " + num); // Print out "Num is: 10", this is because we assigned num to 10 in the previous line
+                        //The way to combine things when they are being printed is to put a plus sign 
+                        num = num * 2; //set the value of num to twice itself. 10 * 2 = 20. Num is now equal to 20. 
+                        System.out.println("Num is now: " + num); //Print out "Num is now: 20"
+                    } 
+                }
+            </code> </pre>
+                <p>Result: <br> Num is: 10 <br> Num is now: 20</p>
+                <p>Another way to create variables is <em>type name = value;</em></p>
+                <p>In the previous code, we learned about integer variables, now let's learn about String variables</p>
+                <p>Strings are lines of text and represented by double quotes around them. In fact, in the first Hello World
+                    program, "Hello World" is a string!</p>
+                <pre> <code>
+                class StringVariables{ 
+                    public static void main(String args[]){
+                        String x = "Hi"; // Create String variable named x that stores "Hi"
+                        String y = "There";// Create String variable named x that stores "There". 
+                        System.out.println(x + y);//Prints out x and y ("Hi" and "There") combined. 
+                    } 
+                }
+            </code></pre>
+                The Result will be: HiThere. This happens because there is no space between the Strings.
+                While in the println line, there is space between x and y, this space doesn't mean anything because
+                there isn't a string signifying a space. <br><code>System.out.println(x + "" + y);</code> adds a space
+                between the two strings and therefore the result will be: Hi There.
+            </section>
+
+            <section id="Control_Statements" class="main-section">
+                <div class="sectiontitle">Control Statements</div>
+                <p>Control Statements control whether a code run based on if a condition is true or false
+                    This is done with the if, else if, and else Statements. The condition is done with relational
+                    operators like >, <, and ==.
+                    These compare two values.</p>
+                <pre> <code>
+                class IfControl{ 
+                    public static void main(String args[]){
+                int x = 1; // initializes int named x and sets it to 1.
+                int y = 2; // initializes int named y and sets it to 2.
+                if(y > x) System.out.println("y is greater than x"); // Checks if y is greater than x. It is so it prints out y is greater than x.            
+                    } 
+                }
+            </code></pre>
+                <p>Let's change this up a little bit by using the else statement. The code under else, runs
+                    when all the other conditions are not true.</p><br>
+                <pre>  <code>
+                class IfAndElseControl{ 
+                    public static void main(String args[]){
+                int x = 1;// initializes int named x and sets it to 1.
+                int y = 2;// initializes int named y and sets it to 2.
+                if(x > y) System.out.println("y is greater than x"); // Checks if y is greater than x. It is not, so the code doesn't run. However, there is an else statement.   
+                else System.out.println("The other conditions are false");// Since the first condition isn't true, this else block runs and prints out "The other conditions are false". 
+                    } 
+                }
+            </code></pre>
+                <p>We can use more than one condition using the <code>else if</code>
+                    statement</p>
+                <pre> <code> 
+                class IfAndElseIfAndElseControl{ 
+                    public static void main(String args[]){
+                int x = 1; // initializes int named x and sets it to 1.
+                int y = 1; // initializes int named y and sets it to 1.
+                if(x > y) System.out.println("y is greater than x"); // Checks if y is greater than x. It is not, so the code doesn't run. However, there is an else if statement    
+                         
+                else if(x == y) System.out.println("x is equal to y"); // Checks if x is equal to y and it is so it prints out: x is equal to y.
+
+                else System.out.println("The other conditions are false"); // Since the above else if condition is true, this statement doesn't run. 
+                    } 
+                }
+            </code></pre>
+            </section>
+
+            <section id="Blocks_of_code" class="main-section">
+                <div class="sectiontitle">Blocks of code</div>
+                <ul>
+                    <li>Curly brackets can be used to group code together. We can use this in our control statements
+                    </li>
+                    <li>This is useful when we want to run multiple lines of code when a condition is satisfied</li>
+                </ul>
+
+                <pre><code>
+                class ControlBlocks{ 
+                    public static void main(String args[]){
+                        int x = 0; //Creates and set an int named x to 0;
+                        int y = 1; //Creates and set an int named y to 1;
+                        if(x < y){ //Creates a condition thats if x is less than y. It is so this block runs.
+                            System.out.println("x is less than y");//Prints out: "x is less than y".
+                            System.out.println("x is less than 1");//Prints out: "x is less than 1".
+                            //Both statements are printed because they are within the code block of the if statement
+                        } 
+                    } 
+            </code></pre>
+            </section>
+
+            <section id="Loops" class="main-section">
+                <div class="sectiontitle">Loops</div>
+                <p>A loop statement repeats code multiple times. Let's take a look at one of the types of loops, the for
+                    loop </p>
+                <p>The for loop is written as follows</p>
+                <code><em>for(initialization;condition;increment)</em></code>
+                <p>You first initialize a variable and set it to value. Then you make a
+                    condition that allows the loop to run while it's true. Then you increment (increase) or decrement (decrease) the 
+                    initialized variable so that it
+                    can
+                    eventually make the condition false which stops the loop</p>
+                <pre>  <code>
+                class ForLoops{
+                    public static void main(String args[]){
+                     for(int i = 0; i < 3; i = i + 1){//initializes int named i and sets it equal to 0. This loop runs until i is not less than 3. i increases by 1 every loop. <br>
+                        System.out.println("The number is: " + i);//Prints "The number is: i". i changes every loop because it increments every loop<br>
+                } 
+            } 
+        } 
+             </code></pre>
+                <p>Results: <br>
+                    The number is: 0 <br>
+                    The number is: 1 <br>
+                    The number is: 2 <br>
+                </p>
+            </section>
+
+
+    </main>
+    </body>
+
+</html>

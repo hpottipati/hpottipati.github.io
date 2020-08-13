@@ -1,0 +1,212 @@
+body {
+    background: whitesmoke;
+    background-size: cover;
+    color: black;
+    font-family: sans-serif;
+    padding: auto;
+}
+.pagetitle{
+    font-size: 1rem;
+    font-size: 2.8rem;
+    font-family: 'Open Sans';
+    display: inline-block;
+}
+.pagetitle a{
+    text-decoration: none;
+    color: white;
+}
+.pagetitle:hover {
+    opacity: 0.7;
+    transform: translateY(2px);
+    transition-duration: 600ms;
+}
+
+.title {
+    font-family: Lato, 'Open Sans';
+    font-size: 3rem;
+}
+
+.aboutme {
+    background-size: auto;
+    color: #30343F;
+    margin: 0vh auto;
+    font-family: Lato, 'Open sans', Roboto, Helvetica;
+    font-size: 1.5rem;
+}
+
+.projectstitle>h2 {
+    text-align: center;
+    font-family: Lato, 'Open Sans';
+    font-size: 2.5rem;
+    margin: auto auto 1rem auto;
+}
+
+.projectstitle>p {
+    font-family: Lato, 'Open Sans';
+    font-size: 1.3rem;
+    margin: auto auto 2rem auto;
+    text-align: left;
+
+}
+
+.separator {
+    margin: 1rem auto;
+    width: 40%;
+    text-align: center;
+    border-width: 0.1rem;
+    color: #5c462f;
+}
+
+.projects {
+    display: flex;
+    background: black;
+    padding: 0.1rem;
+    margin: 1vh 1vw;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    background-size: auto;
+    justify-content: center;
+    margin: 5vh -1vw 0vh -1vh;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#githublogo {
+    width: 6vw;
+    padding: 1vh;
+    margin: 1.8vh 1.5vw 1.5vh 1.5vw;
+}
+
+#githublogo:hover {
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+
+#gmaillogo {
+    width: 5.5vw;
+    padding: 1vh;
+    margin: 3.7vh 1.5vw 1.5vh 1.5vw;
+
+}
+
+#gmaillogo:hover {
+
+    transform: scale(1.2);
+    transition-duration: 200ms;
+}
+
+
+
+@media screen and (max-width:1595px) {
+    #gmaillogo {
+        width: 7vw;
+    }
+
+    #githublogo {
+        width: 7.5vw;
+
+    }
+
+    .aboutme {
+        font-size: 1.3rem;
+    }
+
+    .title,
+    .projectstitle>h2 {
+        font-size: 2.7rem;
+    }
+}
+
+@media screen and (max-width:1398px) {
+    #gmaillogo {
+        margin: 3.3vh 1.5vw 1.5vh 1.5vw;
+
+    }
+
+    .separator {
+        width: 45%;
+    }
+
+
+}
+
+@media screen and (max-width:782px) {
+    #gmaillogo {
+        width: 8vw;
+        margin: 3.0vh 1.5vw 1.5vh 1.5vw;
+    }
+
+    #githublogo {
+        width: 8.5vw;
+
+    }
+
+    .aboutme {
+        font-size: 1rem;
+    }
+
+    .title,
+    .projectstitle>h2 {
+        font-size: 2.4rem;
+    }
+
+    .separator {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:627px) {
+    #gmaillogo {
+        width: 9vw;
+        margin: 2.8vh 1.5vw 1.5vh 1.5vw;
+    }
+
+    #githublogo {
+        width: 9.5vw;
+    }
+
+    .title,
+    .projectstitle>h2 {
+        font-size: 2.0rem;
+    }
+
+    .separator {
+        width: 70%;
+    }
+
+    .projects {
+
+        margin: 2vh 2vw;
+
+    }
+    footer{
+        bottom: -100px;
+    }
+
+
+
+}
+
+@media screen and (max-width:400px) {
+    .projects {
+        margin: 4vh 2.5vw;
+
+    }
+
+}
+
+@media screen and (min-height:2436px) {
+    #gmaillogo {
+        width: 7vw;
+        margin: 2.5vh 1.5vw 1.5vh 1.5vw;
+    }
+
+
+}

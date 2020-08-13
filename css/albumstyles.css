@@ -1,0 +1,32 @@
+.portrait {
+    display: grid;
+    background-color: lightgray;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0px 0px;
+    justify-items: center;
+    position: relative;
+    top: 1.1vh;
+}
+
+.portrait figure img {
+    /* background: rgb(95, 94, 94); */
+    width: 80%;
+    box-shadow: 2px 2px 8px #888888;
+}
+
+.pic1 {
+    grid-area: 2/2/3/3;
+}
+
+.pic2 {
+    grid-area: 1/1/2/3;
+}
+
+.pic3 {
+    grid-area: 2/1/2/2;
+}
+.captions{
+    font-family: sans-serif;
+    margin-top: 0.5rem;
+}

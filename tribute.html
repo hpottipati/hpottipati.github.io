@@ -5,18 +5,27 @@
 
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-        <header>
-            <nav>
-                <ul>
-                    <li class="navigation"><a href="index.html">Home</a></li>
-                    <li class="navigation"><a href="tribute.html">Tribute Page</a></li>
+        <link rel="stylesheet" href="css/tributestyles.css">
+        <link rel="stylesheet" href="css/navigationstyles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                </ul>
-            </nav>
-        </header>
-        <h1 id="title">Mahatma Gandhi</h1>
-        <link rel="stylesheet" href="tributestyles.css">
     </head>
+    </head>
+    <header>
+        <nav>
+            <ul>
+                <li class="navigation"><a href="index.html">Home</a></li>
+                <li class="navigation"><a href="tribute.html">Tribute Page</a></li>
+                <li class="navigation"><a href="signupform.html">Sign up Form</a></li>
+                <li class="navigation"><a href="productpage.html">Product Page</a></li>
+                <li class="navigation"><a href="javatutorial.html">Java Guide</a></li>
+                <li class="navigation"><a href="album.html">Photo Album</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="title">Mahatma Gandhi</h1>
+
+
 
     <body>
 
@@ -26,30 +35,53 @@
             <figcaption id="img-caption">A portrait of Gandhi</figcaption>
         </figure>
 
+        <section class="tribute-info">
+            <p>Born Mohandas Karamchand Gandhi, Mahatma Gandhi was and Indian politician and activist who helped
+                free India from British rule. He was known as Mahatma to followers, which means "Great Soul".
+                He began activism once he saw mistreatment of Indians in South Africa.
 
+            </p>
+        </section>
 
-        <h2 id="tribute-info"> Major Achievements: <br>
+        <section class="tribute-info">
+            <h2>Major Achievements: <br></h2>
             <ul>
-                <li>The salt march - He led a march to protest the British rules that prevented Indian from obtaining
-                    salt by themselves. As a result, they had to buy it from the British with a high tax.
+                <li>The laws that Britain had didn't allow Indians to collect or sell salt. If they wanted to buy salt,
+                    they had to do so with a high tax. To protest against, this he organized a march with 78 of his
+                    followers to the town of Dandi.
+                    As the march went on, more people joined him. As Gandhi picked up the first clump of salt, thousands
+                    of other people from nearby cities joined him
                 </li>
-                <br>
-                <li>Fasted for 21 days to protest again the British.
-                    This allowed India to become independent in 1947</li>
+                <li>Gandhi also partook in many hunger-strikes. One of his notable ones was in 1932.
+                    While he was in jail, he started a Hunger Strike to protest the British's decision to divide India's
+                    electoral system by caste. He also fasted to protest the British government giving the Untouchables
+                    caste their separate political representation </li>
             </ul>
-            <br>
             <a href="https://en.wikipedia.org/wiki/Mahatma_Gandhi" id="tribute-link" target="_blank"> Click here</a>
             for more information about him
-        </h2>
-        <h2 id="tribute-info"> Written Works - Click to visit the goodreads page <br>
+        </section>
+        <section class="tribute-info">
+            <h2>Written Works - Click to visit the goodreads page <br></h2>
             <ul>
                 <li><a target="_blank" href="https://www.goodreads.com/book/show/112803.Gandhi">Gandhi: An
                         autobiography</a></li>
-                <br>
                 <li><a target="_blank" href="https://www.goodreads.com/book/show/297609.Hind_Swaraj_and_Other_Writings">
                         Hind Swaraj and Other Writings</a></li>
             </ul>
-        </h2>
+        </section>
+        <section class="tribute-info">
+            <h2>Gandhi in present day</h2>
+            <div class="photos">
+                <figure id="rupeepic">
+                    <img src="images/INRNotes.jpg" alt="Indian 2000 rupee">
+                    <figcaption>Gandhi's face is on all the Indian Rupee bills</figcaption>
+                </figure>
+                <figure id="gandhistatue">
+                    <img src="images/gandhistatue.jpg" alt="Gandhi Statue at the Telangana Assembly Building">
+                    <figcaption>Gandhi Statue at the Telangana Assembly Building</figcaption>
+                </figure>
+            </div>
+        </section>
 
     </body>
 
